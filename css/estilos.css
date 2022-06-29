@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*Header*/
+nav {
+  background-color: #566573;
+}
+
+nav .lista__header {
+  margin-top: 10px;
+}
+
+@media all and (min-width: 992px) {
+  .titulo__header {
+    margin-left: 200px;
+  }
+}
+
+/*Banner*/
+.bannerindex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 808px;
+  background-image: url(../assets/indexdesktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bannerindex h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  width: 90%;
+}
+
+@media all and (min-width: 798px) {
+  .bannerindex {
+    height: 1000px;
+  }
+  h1 {
+    font-size: 5rem;
+    color: white;
+  }
+}
+
+@media all and (min-width: 1920px) {
+  .bannerindex {
+    height: 850px;
+  }
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 500px;
+  background-image: url(../assets/entrenamiento_mobile.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner h1 {
+  color: whitesmoke;
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+  width: 90%;
+}
+
+.banner__nutricion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 500px;
+  background-image: url(../assets/nutricion-mobile.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner__nutricion h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+  width: 90%;
+}
+
+@media all and (min-width: 300px) {
+  .banner__nutricion h1 {
+    color: green;
+    font-size: 4rem;
+  }
+  .banner h1 {
+    font-size: 2.5rem;
+    color: red;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .banner__nutricion h1 {
+    color: green;
+    font-size: 5rem;
+  }
+  .banner h1 {
+    font-size: 5rem;
+  }
+}
+
+@media all and (min-width: 1378px) {
+  .banner {
+    background-image: url(../assets/entrenamiento-desktop.webp);
+  }
+  .banner__nutricion {
+    background-image: url(../assets/nutricion_desktop.jpeg);
+    height: 500px;
+  }
+  .banner__nutricion h1 {
+    color: green;
+  }
+}
+
+/*Entrenamiento Y Nutricion*/
+.card__entrenamiento, .card__nutricion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #e5e7e9;
+}
+
+.card__entrenamiento article, .card__nutricion article {
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+  margin-top: 85px;
+  text-align: center;
+  margin-bottom: 85px;
+  background-color: white;
+}
+
+.card__entrenamiento article img, .card__nutricion article img {
+  width: 330px;
+  height: 220px;
+  border-bottom: 2px solid black;
+  margin-bottom: 7px;
+  margin-top: 10px;
+  border-radius: 7px;
+}
+
+.card__entrenamiento article {
+  height: 555px;
+}
+
+.card__entrenamiento article div {
+  width: 330px;
+}
+
+.card__entrenamiento article div h2 {
+  font-size: 1.6rem;
+}
+
+.card__entrenamiento article div p {
+  font-size: 0.9rem;
+  padding-top: 9px;
+}
+
+.card__nutricion article {
+  height: 510px;
+}
+
+.card__nutricion article div {
+  width: 330px;
+}
+
+.card__nutricion article div h2 {
+  font-size: 1.6rem;
+}
+
+.card__nutricion article div p {
+  font-size: 0.9rem;
+  padding-top: 9px;
+}
+
+@media all and (min-width: 1378px) {
+  .banner {
+    height: 500px;
+  }
+  .card__entrenamiento, .card__nutricion {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/*Team*/
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.team img {
+  width: 355px;
+  height: 300px;
+}
+
+.team article {
+  text-align: center;
+  height: 274px;
+  width: 80%;
+  margin-bottom: 80px;
+}
+
+.team article img {
+  width: 350px;
+  height: 300px;
+}
+
+.team article div {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.team article p {
+  margin-top: 9px;
+  font-size: 1rem;
+}
+
+@media all and (min-width: 800px) {
+  .team {
+    margin-top: 30px;
+  }
+  .team img {
+    height: 500px;
+    width: 600px;
+  }
+  .team article {
+    margin-top: 20px;
+  }
+  .team article div {
+    font-size: 2.7rem;
+  }
+  .team article p {
+    font-size: 1.3rem;
+  }
+}
+
+@media all and (min-width: 1920px) {
+  .team {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 110px;
+  }
+  .team img {
+    height: 600px;
+    width: 700px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+  .team article {
+    width: 400px;
+    margin-right: 50px;
+    margin-bottom: 250px;
+  }
+  .team article div {
+    font-size: 3rem;
+  }
+  .team article p {
+    font-size: 1.4rem;
+  }
+  .team footer {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+/*Contacto*/
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+  height: 828px;
+}
+
+form .containerform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+form .containerform .tituloform {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: black;
+  font-size: 3rem;
+}
+
+form .containerform .titulo__form {
+  font-size: 1.3rem;
+  padding: 5px;
+}
+
+form .containerform .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+form .containerform .input .i1 {
+  margin: 6px;
+  height: 47px;
+  border-radius: 35px;
+  width: 350px;
+  text-align: center;
+}
+
+form .containerform .i2 {
+  height: 47px;
+  border-radius: 35px;
+  width: 712px;
+  margin: 6px;
+  text-align: center;
+}
+
+form .containerform .container__label {
+  margin-left: 6px;
+}
+
+form .containerform .container__label label {
+  margin: 0 10px 0 2px;
+  font-size: 1rem;
+}
+
+form .containerform textarea {
+  width: 725px;
+  height: 200px;
+  padding: 10px;
+  margin: 6px;
+  text-align: center;
+}
+
+form .containerform .boton {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 20px;
+  width: 160px;
+  height: 35px;
+  border-radius: 35px;
+}
+
+@media all and (min-width: 300px) and (max-width: 800px) {
+  form {
+    height: 850px;
+  }
+  form .containerform {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 55px;
+  }
+  form .containerform .tituloform {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  form .containerform .titulo__form {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  form .containerform .input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form .containerform .i2 {
+    width: 350px;
+  }
+  form .containerform textarea {
+    width: 350px;
+    height: 150px;
+  }
+}
+
+@media all and (min-width: 801px) and (max-width: 1378px) {
+  form {
+    height: 940px;
+  }
+}
+
+@media all and (min-width: 1920px) {
+  form {
+    height: 828px;
+  }
+}
+
+/*Footer*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #566573;
+}
+
+footer img {
+  height: 50px;
+}
+
+.foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #566573;
+  position: fixed;
+  bottom: 0;
+}
+
+.foot img {
+  height: 50px;
+}
+/*# sourceMappingURL=estilos.css.map */
